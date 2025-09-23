@@ -1,0 +1,186 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0fff8;
+}
+
+.navbar {
+  background-color: #d9d9d9 !important;
+}
+
+.menu_active {
+  font-weight: 700;
+  color: #000 !important;
+}
+
+.nav_link {
+  font-weight: 400;
+  color: #000 !important;
+}
+
+.tmbl_nav {
+  font-weight: 700;
+}
+
+.hero_section {
+  width: 100%;
+  height: 628px;
+  background-image: url(../img/bg_hero.png);
+  position: relative;
+}
+
+.hero_section .cloud {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to left,
+    rgba(7, 144, 76, 0.7),
+    rgba(2, 42, 22, 0.5)
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero_section img {
+  width: 100%;
+  height: fit-content;
+  background-size: cover;
+  position: absolute;
+}
+
+.hero_section h1,
+.hero_section p,
+.hero_section a {
+  position: absolute;
+}
+
+.hero_section h1 {
+  top: 200px;
+  left: 145px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 52px;
+}
+
+.hero_section p {
+  top: 360px;
+  left: 145px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.hero_section p span {
+  font-weight: 700;
+}
+
+.tmbl_hero {
+  top: 490px;
+  left: 145px;
+  display: inline-block;
+  padding: 20px 24px;
+  background-color: #fff;
+  color: #07904c;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tmbl_hero i {
+  margin-left: 5px;
+  font-size: 16px;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tmbl_hero:hover {
+  color: #07904c;
+}
+
+.tmbl_hero:hover i {
+  transform: translateX(5px);
+  color: #07904c;
+}
+
+.tmbl_paket,
+.tmbl_paket_outline {
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tmbl_paket {
+  padding: 10px 45px;
+  background-color: #07904c;
+  color: #fff;
+  transition: 0.2s ease-in;
+}
+
+.tmbl_paket:hover {
+  color: #07904c;
+  background-color: #fff;
+  border: 1px solid #07904c;
+}
+
+.tmbl_paket_outline {
+  padding: 10px 20px;
+  border: 1px solid #07904c;
+  color: #07904c;
+  transition: 0.2s ease-in;
+}
+
+.tmbl_paket_outline:hover {
+  background-color: #07904c;
+  color: #fff;
+}
+
+.card_kuliner {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card_kuliner:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-image: linear-gradient(to right, #07904c, #022a16);
+}
+
+@media screen and (max-width: 360px) {
+  .hero_section h1 {
+    top: 170px;
+    left: 10px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .hero_section p {
+    top: 330px;
+    left: 10px;
+    font-weight: 400;
+    font-size: 10px;
+  }
+
+  .hero_section p span {
+    font-weight: 700;
+  }
+
+  .tmbl_hero {
+    top: 490px;
+    left: 10px;
+    display: inline-block;
+    padding: 10px 12px;
+    background-color: #fff;
+    color: #07904c;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}

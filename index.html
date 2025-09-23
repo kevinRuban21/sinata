@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Remixicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo.png" alt="logo" width="238"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link menu_active" aria-current="page" href="#"
+                >Profil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Destinasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Informasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reservasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kontak</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-success tmbl_nav">LOGIN</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero_section">
+      <div class="cloud"></div>
+      <h1>
+        EXPLORE DESA WISATA <br />
+        NEGERI OMA, MALUKU TENGAH
+      </h1>
+      <p>
+        <span>Negeri Oma,</span> sebuah <span>Desa Wisata</span> di Kecamatan
+        Pulau Haruku, Kabupaten Maluku Tengah, Maluku <br />
+        Menawarkan pesona alam yang memukau dengan air panas alami, pemandian
+        mata air, <br />
+        pantai yang indah. Selain itu, kekayaan budaya, sejarah, kerajinan
+        tangan, dan kuliner khas <br />
+        menambah daya tarik Negeri Oma.
+      </p>
+      <a href="#" class="button tmbl_hero"
+        >Reservasi Sekarang <i class="ri-arrow-right-s-line"></i
+      ></a>
+    </div>
+
+    <!-- Destinasi Wisata -->
+    <div class="container destination my-5">
+      <h1 class="text-center text-success fw-bold">
+        Destinasi <span class="fw-light">Wisata</span>
+      </h1>
+      <p class="text-center">
+        Jelajahi Keindahan Wisata Alam yang Memukau, Kuliner, dan Budaya Lokal
+        yang Unik
+      </p>
+
+      <div class="destination_swiper">
+        <div class="row my-5">
+          <div class="col-md-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="img/destinasi/1.png"
+                class="card-img"
+                alt="image"
+                style="filter: brightness(50%)"
+              />
+              <div class="card-img-overlay text-center my-5 py-5">
+                <h5 class="card-title">AIR ASOL</h5>
+                <p class="card-text">
+                  Pemandian Air Asol menawarkan kesegaran alami dengan air yang
+                  langsung mengalir dari mata air jernih
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="img/destinasi/2.png"
+                class="card-img"
+                alt="image"
+                style="filter: brightness(50%)"
+              />
+              <div class="card-img-overlay text-center my-5 py-5">
+                <h5 class="card-title">AIR PANAS KERKO</h5>
+                <p class="card-text">
+                  Nikmati sensasi unik berendam di pemandian air panas Kerko
+                  yang terletak di tepi pantai, namun pastikan Anda berkunjung
+                  saat air laut sedang surut
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-dark text-white">
+              <img
+                src="img/destinasi/3.png"
+                class="card-img"
+                alt="image"
+                style="filter: brightness(50%)"
+              />
+              <div class="card-img-overlay text-center my-5 py-5">
+                <h5 class="card-title">MINIATUR PATUNG LIBERTY</h5>
+                <p class="card-text">
+                  Miniatur Patung Liberty berdiri gagah di atas batu karang,
+                  menyapa setiap pengunjung dari kejauhan di tepi pantai.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paket Wisata -->
+    <div
+      class="wisata mt-5"
+      style="
+        background-image: url(img/bg-paket.png);
+        width: 100%;
+        height: 675px;
+      "
+    >
+      <div class="container">
+        <h1 class="text-center text-white pt-5 fw-bold">
+          Paket <span class="fw-light">Wisata</span>
+        </h1>
+        <p class="text-center text-white pb-5">
+          Pilihan Lengkap untuk Liburan Anda di Negeri Oma
+        </p>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="img/paket/1.png"
+                    class="img-fluid rounded-start"
+                    alt="image"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-success fw-light">
+                      Paket 1 - Sensation
+                    </h5>
+                    <h5 class="fw-bold">Rp. 750.000</h5>
+                    <p class="card-text">
+                      1 Hari. Sudah Termasuk Transportasi dari Ambon, Snack, dan
+                      Makan Siang.
+                    </p>
+                    <div class="tmbl pt-4">
+                      <a href="#" class="tmbl_paket_outline">Lihat Detail</a>
+                      <a href="#" class="tmbl_paket">Pesan</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="img/paket/2.png"
+                    class="img-fluid rounded-start"
+                    alt="image"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title text-success fw-light">
+                      Paket 2 - Ultimate
+                    </h5>
+                    <h5 class="fw-bold">Rp. 1.050.000</h5>
+                    <p class="card-text">
+                      2 Hari. Termasuk semua di Paket 1, Penginapan, Makan Siang
+                      dan Malam, Explore Seluruh Wisata
+                    </p>
+                    <div class="tmbl pt-3">
+                      <a href="#" class="tmbl_paket_outline">Lihat Detail</a>
+                      <a href="#" class="tmbl_paket">Pesan</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wisata Kuliner -->
+    <div class="container kuliner my-5">
+      <h1 class="text-center text-success fw-light">
+        Wisata <span class="fw-bold">Kuliner</span>
+      </h1>
+      <p class="text-center">Menjelajahi Cita Rasa Lokal di Negeri Oma</p>
+
+      <div class="row pt-5">
+        <div class="col-md-3">
+          <div class="card card_kuliner" style="width: 16rem">
+            <img src="img/kuliner/1.png" class="card-img-top" alt="image" />
+            <div class="card-body">
+              <p class="card-text">Sagu Bunga</p>
+              <h5 class="card-title">Rp. 15.000</h5>
+              <p class="text-muted">body text</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card card_kuliner" style="width: 16rem">
+            <img src="img/kuliner/2.png" class="card-img-top" alt="image" />
+            <div class="card-body">
+              <p class="card-text">Manisan Pala</p>
+              <h5 class="card-title">Rp. 15.000</h5>
+              <p class="text-muted">body text</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card card_kuliner" style="width: 16rem">
+            <img src="img/kuliner/3.png" class="card-img-top" alt="image" />
+            <div class="card-body">
+              <p class="card-text">Bobenka Oma</p>
+              <h5 class="card-title">Rp. 50.000</h5>
+              <p class="text-muted">body text</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card card_kuliner" style="width: 16rem">
+            <img src="img/kuliner/4.png" class="card-img-top" alt="image" />
+            <div class="card-body">
+              <p class="card-text">Nasi Pulut Siram Gula</p>
+              <h5 class="card-title">Rp. 5.000</h5>
+              <p class="text-muted">body text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tmbl_kuliner pt-4 text-center">
+        <a href="#" class="btn btn-outline-success"
+          >Selengkapnya <i class="ri-arrow-right-s-line"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Souvenir -->
+    <div
+      class="souvenir mt-5"
+      style="
+        background-image: url(img/bg-souvenir.png);
+        width: 100%;
+        height: 788px;
+      "
+    >
+      <div class="container">
+        <h1 class="text-center text-white pt-5 fw-bold">Souvenir</h1>
+        <p class="text-center text-white pb-4">
+          Lebih dari Sekadar Cinderamata: Kekayaan Budaya Terkandung dalam
+          Setiap Souvenir Negeri Oma
+        </p>
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card card_kuliner" style="width: 280px; height: 375px">
+              <img src="img/souvenir/1.png" class="card-img-top" alt="image" />
+              <div class="card-body">
+                <p class="card-text">Miniatur Speedboat</p>
+                <h5 class="card-title" style="margin-top: -15px !important">
+                  Rp. 500.000
+                </h5>
+                <p class="text-muted">body text</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card_kuliner" style="width: 280px; height: 375px">
+              <img src="img/souvenir/2.png" class="card-img-top" alt="image" />
+              <div class="card-body">
+                <p class="card-text">Gantungan Kunci</p>
+                <h5 class="card-title" style="margin-top: -15px !important">
+                  Rp. 15.000
+                </h5>
+                <p class="text-muted">body text</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card_kuliner" style="width: 280px; height: 375px">
+              <img src="img/souvenir/3.png" class="card-img-top" alt="image" />
+              <div class="card-body">
+                <p class="card-text">Suling Bambu</p>
+                <h5 class="card-title" style="margin-top: -15px !important">
+                  Rp. 50.000
+                </h5>
+                <p class="text-muted">body text</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card card_kuliner" style="width: 280px; height: 375px">
+              <img src="img/souvenir/4.png" class="card-img-top" alt="image" />
+              <div class="card-body">
+                <p class="card-text">Tahuri</p>
+                <h5 class="card-title" style="margin-top: -15px !important">
+                  Rp. 5.000
+                </h5>
+                <p class="text-muted">body text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tmbl_souvenir text-center mt-4">
+          <a href="#" class="btn btn-outline-light"
+            >Selengkapnya <i class="ri-arrow-right-s-line"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimoni -->
+    <div class="container py-5">
+      <h1 class="text-success text-center fw-bold">Kata mereka</h1>
+      <p class="text-center">
+        Pengalaman Pengunjung Tentang Pariwisata Negeri Oma
+      </p>
+
+      <div class="row pt-5">
+        <div class="col-md-3">
+          <div class="card" style="width: 17rem">
+            <div class="card-body">
+              <h5 class="card-title">“Pemandian air panasnya juara”</h5>
+              <div class="row">
+                <div class="col-2">
+                  <img src="img/testi/1.png" alt="image" />
+                </div>
+                <div class="col-10">
+                  <p class="card-text">Rara Sekar</p>
+                  <p class="text-muted" style="margin-top: -12px">Traveler</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 17rem">
+            <div class="card-body">
+              <h5 class="card-title">“Pantai yang indah dan mempesona”</h5>
+              <div class="row">
+                <div class="col-2">
+                  <img src="img/testi/2.png" alt="image" />
+                </div>
+                <div class="col-10">
+                  <p class="card-text">Isyana Saraswati</p>
+                  <p class="text-muted" style="margin-top: -12px">
+                    Blogger, Singer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 17rem">
+            <div class="card-body">
+              <h5 class="card-title">“Ga bakalan bosan kalo kesini”</h5>
+              <div class="row">
+                <div class="col-2">
+                  <img src="img/testi/3.png" alt="image" />
+                </div>
+                <div class="col-10">
+                  <p class="card-text">Hanny Pattikawa</p>
+                  <p class="text-muted" style="margin-top: -12px">Singer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 17rem">
+            <div class="card-body">
+              <h5 class="card-title">“Air Asol, lanjut pemandian air panas”</h5>
+              <div class="row">
+                <div class="col-2">
+                  <img src="img/testi/4.png" alt="image" />
+                </div>
+                <div class="col-10">
+                  <p class="card-text">Shayne Pattynama</p>
+                  <p class="text-muted" style="margin-top: -12px">Footballer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+      <div class="footer_content container text-white pt-5">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="img/logo2.png" alt="logo" />
+          </div>
+          <div class="col-md-3">
+            <h1 class="fw-bold" style="font-size: 40px">NEGERI OMA</h1>
+            <p class="fw-light" style="letter-spacing: 8px; font-size: 15px">
+              LEPARISA LEAMAHU
+            </p>
+            <p class="fw-light" style="text-align: justify">
+              Negeri Oma adalah surga bagi pencinta alam dengan beragam
+              keindahan alam seperti pantai, sumber air panas, dan panorama alam
+              yang menakjubkan.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3 class="fw-bold">Lokasi</h3>
+            <p class="fw-light">
+              Negeri Oma, Kec. Pulau Haruku Kab. Maluku Tengah, Prov. Maluku
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3 class="fw-bold">Temukan Kami</h3>
+            <h3 class="social_media">
+              <a href="#" class="text-reset text-decoration-none">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="#" class="text-reset text-decoration-none">
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a href="#" class="text-reset text-decoration-none">
+                <i class="ri-twitter-x-line"></i>
+              </a>
+              <a href="#" class="text-reset text-decoration-none">
+                <i class="ri-youtube-line"></i>
+              </a>
+            </h3>
+            <p>Telp: +62 812 3456 7890</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
