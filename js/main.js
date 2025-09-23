@@ -1,8 +1,13 @@
-const swiperHome = new Swiper(".destination_swiper", {
+const swiperDestination = new Swiper(".destination_swiper", {
   loop: true,
-  slidesPerview: "auto",
-  grabCursor: true,
+  spaceBetween: 50,
 
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -11,5 +16,50 @@ const swiperHome = new Swiper(".destination_swiper", {
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+const swiperTestimoni = new Swiper(".testimoni_swiper", {
+  loop: true,
+  spaceBetween: 50,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
   },
 });

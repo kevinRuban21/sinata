@@ -147,6 +147,12 @@ body {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
+.wisata {
+  background-image: url(../img/bg-paket.png);
+  width: 100%;
+  height: 675px;
+}
+
 footer {
   background-image: linear-gradient(to right, #07904c, #022a16);
 }
@@ -182,5 +188,45 @@ footer {
     text-decoration: none;
     border-radius: 5px;
     overflow: hidden;
+  }
+
+  .wisata {
+    height: 100vh;
+  }
+
+  .wisata h5 {
+    font-size: 12px;
+  }
+
+  .wisata p {
+    font-size: 10px;
+  }
+
+  .wisata .tmbl {
+    margin-top: -30px !important;
+    gap: 10px;
+  }
+
+  .tmbl_paket,
+  .tmbl_paket_outline {
+    font-weight: 400;
+    font-size: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .tmbl_paket {
+    padding: 5px 30px;
+    background-color: #07904c;
+    color: #fff;
+    transition: 0.2s ease-in;
+  }
+
+  .tmbl_paket_outline {
+    padding: 5px 15px;
+    border: 1px solid #07904c;
+    color: #07904c;
+    transition: 0.2s ease-in;
   }
 }

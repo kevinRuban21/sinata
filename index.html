@@ -31,7 +31,10 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
 
     <title>Hello, world!</title>
   </head>
@@ -109,17 +112,17 @@
         yang Unik
       </p>
 
-      <div class="destination_swiper">
-        <div class="row my-5">
-          <div class="col-md-4">
-            <div class="card bg-dark text-white">
+      <div class="destination_swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card bg-dark text-white" style="width: 20rem">
               <img
                 src="img/destinasi/1.png"
                 class="card-img"
                 alt="image"
                 style="filter: brightness(50%)"
               />
-              <div class="card-img-overlay text-center my-5 py-5">
+              <div class="card-img-overlay text-center my-5 py-4">
                 <h5 class="card-title">AIR ASOL</h5>
                 <p class="card-text">
                   Pemandian Air Asol menawarkan kesegaran alami dengan air yang
@@ -128,15 +131,15 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card bg-dark text-white">
+          <div class="swiper-slide">
+            <div class="card bg-dark text-white" style="width: 20rem">
               <img
                 src="img/destinasi/2.png"
                 class="card-img"
                 alt="image"
                 style="filter: brightness(50%)"
               />
-              <div class="card-img-overlay text-center my-5 py-5">
+              <div class="card-img-overlay text-center my-5 py-4">
                 <h5 class="card-title">AIR PANAS KERKO</h5>
                 <p class="card-text">
                   Nikmati sensasi unik berendam di pemandian air panas Kerko
@@ -146,15 +149,32 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card bg-dark text-white">
+          <div class="swiper-slide">
+            <div class="card bg-dark text-white" style="width: 20rem">
               <img
                 src="img/destinasi/3.png"
                 class="card-img"
                 alt="image"
                 style="filter: brightness(50%)"
               />
-              <div class="card-img-overlay text-center my-5 py-5">
+              <div class="card-img-overlay text-center my-5 py-4">
+                <h5 class="card-title">MINIATUR PATUNG LIBERTY</h5>
+                <p class="card-text">
+                  Miniatur Patung Liberty berdiri gagah di atas batu karang,
+                  menyapa setiap pengunjung dari kejauhan di tepi pantai.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card bg-dark text-white" style="width: 20rem">
+              <img
+                src="img/destinasi/3.png"
+                class="card-img"
+                alt="image"
+                style="filter: brightness(50%)"
+              />
+              <div class="card-img-overlay text-center my-5 py-4">
                 <h5 class="card-title">MINIATUR PATUNG LIBERTY</h5>
                 <p class="card-text">
                   Miniatur Patung Liberty berdiri gagah di atas batu karang,
@@ -164,28 +184,28 @@
             </div>
           </div>
         </div>
+
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- <div class="destination_swiper_button">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div> -->
       </div>
     </div>
 
     <!-- Paket Wisata -->
-    <div
-      class="wisata mt-5"
-      style="
-        background-image: url(img/bg-paket.png);
-        width: 100%;
-        height: 675px;
-      "
-    >
+    <div class="wisata mt-5">
       <div class="container">
         <h1 class="text-center text-white pt-5 fw-bold">
           Paket <span class="fw-light">Wisata</span>
         </h1>
-        <p class="text-center text-white pb-5">
+        <p class="text-center text-white pb-4">
           Pilihan Lengkap untuk Liburan Anda di Negeri Oma
         </p>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="card mb-3" style="max-width: 540px">
               <div class="row g-0">
                 <div class="col-md-4">
@@ -205,16 +225,20 @@
                       1 Hari. Sudah Termasuk Transportasi dari Ambon, Snack, dan
                       Makan Siang.
                     </p>
-                    <div class="tmbl pt-4">
-                      <a href="#" class="tmbl_paket_outline">Lihat Detail</a>
-                      <a href="#" class="tmbl_paket">Pesan</a>
+                    <div class="row tmbl pt-4">
+                      <div class="col-md-6 col-sm-12">
+                        <a href="#" class="tmbl_paket_outline">Lihat Detail</a>
+                      </div>
+                      <div class="col-md-6 col-sm-12">
+                        <a href="#" class="tmbl_paket">Pesan</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-6">
             <div class="card mb-3" style="max-width: 540px">
               <div class="row g-0">
                 <div class="col-md-4">
@@ -234,9 +258,13 @@
                       2 Hari. Termasuk semua di Paket 1, Penginapan, Makan Siang
                       dan Malam, Explore Seluruh Wisata
                     </p>
-                    <div class="tmbl pt-3">
-                      <a href="#" class="tmbl_paket_outline">Lihat Detail</a>
-                      <a href="#" class="tmbl_paket">Pesan</a>
+                    <div class="row tmbl pt-4">
+                      <div class="col-md-6 col-sm-12">
+                        <a href="#" class="tmbl_paket_outline">Lihat Detail</a>
+                      </div>
+                      <div class="col-md-6 col-sm-12">
+                        <a href="#" class="tmbl_paket">Pesan</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -384,68 +412,90 @@
         Pengalaman Pengunjung Tentang Pariwisata Negeri Oma
       </p>
 
-      <div class="row pt-5">
-        <div class="col-md-3">
-          <div class="card" style="width: 17rem">
-            <div class="card-body">
-              <h5 class="card-title">“Pemandian air panasnya juara”</h5>
-              <div class="row">
-                <div class="col-2">
-                  <img src="img/testi/1.png" alt="image" />
-                </div>
-                <div class="col-10">
-                  <p class="card-text">Rara Sekar</p>
-                  <p class="text-muted" style="margin-top: -12px">Traveler</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" style="width: 17rem">
-            <div class="card-body">
-              <h5 class="card-title">“Pantai yang indah dan mempesona”</h5>
-              <div class="row">
-                <div class="col-2">
-                  <img src="img/testi/2.png" alt="image" />
-                </div>
-                <div class="col-10">
-                  <p class="card-text">Isyana Saraswati</p>
-                  <p class="text-muted" style="margin-top: -12px">
-                    Blogger, Singer
-                  </p>
+      <div class="testimoni_swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card" style="width: 17rem">
+              <div class="card-body">
+                <h5 class="card-title">“Pemandian air panasnya juara”</h5>
+                <div class="row">
+                  <div class="col-2">
+                    <img src="img/testi/1.png" alt="image" />
+                  </div>
+                  <div class="col-10">
+                    <p class="card-text">Rara Sekar</p>
+                    <p class="text-muted" style="margin-top: -12px">Traveler</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" style="width: 17rem">
-            <div class="card-body">
-              <h5 class="card-title">“Ga bakalan bosan kalo kesini”</h5>
-              <div class="row">
-                <div class="col-2">
-                  <img src="img/testi/3.png" alt="image" />
-                </div>
-                <div class="col-10">
-                  <p class="card-text">Hanny Pattikawa</p>
-                  <p class="text-muted" style="margin-top: -12px">Singer</p>
+          <div class="swiper-slide">
+            <div class="card" style="width: 17rem">
+              <div class="card-body">
+                <h5 class="card-title">“Pantai yang indah dan mempesona”</h5>
+                <div class="row">
+                  <div class="col-2">
+                    <img src="img/testi/2.png" alt="image" />
+                  </div>
+                  <div class="col-10">
+                    <p class="card-text">Isyana Saraswati</p>
+                    <p class="text-muted" style="margin-top: -12px">
+                      Blogger, Singer
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" style="width: 17rem">
-            <div class="card-body">
-              <h5 class="card-title">“Air Asol, lanjut pemandian air panas”</h5>
-              <div class="row">
-                <div class="col-2">
-                  <img src="img/testi/4.png" alt="image" />
+          <div class="swiper-slide">
+            <div class="card" style="width: 17rem">
+              <div class="card-body">
+                <h5 class="card-title">“Ga bakalan bosan kalo kesini”</h5>
+                <div class="row">
+                  <div class="col-2">
+                    <img src="img/testi/3.png" alt="image" />
+                  </div>
+                  <div class="col-10">
+                    <p class="card-text">Hanny Pattikawa</p>
+                    <p class="text-muted" style="margin-top: -12px">Singer</p>
+                  </div>
                 </div>
-                <div class="col-10">
-                  <p class="card-text">Shayne Pattynama</p>
-                  <p class="text-muted" style="margin-top: -12px">Footballer</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 17rem">
+              <div class="card-body">
+                <h5 class="card-title">
+                  “Air Asol, lanjut pemandian air panas”
+                </h5>
+                <div class="row">
+                  <div class="col-2">
+                    <img src="img/testi/4.png" alt="image" />
+                  </div>
+                  <div class="col-10">
+                    <p class="card-text">Shayne Pattynama</p>
+                    <p class="text-muted" style="margin-top: -12px">
+                      Footballer
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 17rem">
+              <div class="card-body">
+                <h5 class="card-title">“Pemandian air panasnya juara”</h5>
+                <div class="row">
+                  <div class="col-2">
+                    <img src="img/testi/1.png" alt="image" />
+                  </div>
+                  <div class="col-10">
+                    <p class="card-text">Rara Sekar</p>
+                    <p class="text-muted" style="margin-top: -12px">Traveler</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -508,7 +558,7 @@
     ></script>
 
     <!-- Swiper JS -->
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!-- Main JS -->
     <script src="js/main.js"></script>
