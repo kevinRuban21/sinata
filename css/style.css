@@ -147,14 +147,22 @@ body {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-.wisata {
-  background-image: url(../img/bg-paket.png);
-  width: 100%;
-  height: 675px;
-}
-
 footer {
   background-image: linear-gradient(to right, #07904c, #022a16);
+}
+
+@media screen and (min-width: 728px) {
+  .souvenir {
+    background-image: url(../img/bg-souvenir.png);
+    width: 100%;
+    height: 788px;
+  }
+
+  .wisata {
+    background-image: url(../img/bg-paket.png);
+    width: 100%;
+    height: 675px;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -191,7 +199,7 @@ footer {
   }
 
   .wisata {
-    height: 100vh;
+    background-image: linear-gradient(to right, #07904c, #022a16);
   }
 
   .wisata h5 {
@@ -228,5 +236,9 @@ footer {
     border: 1px solid #07904c;
     color: #07904c;
     transition: 0.2s ease-in;
+  }
+
+  .souvenir {
+    background-image: linear-gradient(to right, #07904c, #022a16);
   }
 }
