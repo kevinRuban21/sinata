@@ -33,7 +33,7 @@ const swiperDestination = new Swiper(".destination_swiper", {
 
 const swiperTestimoni = new Swiper(".testimoni_swiper", {
   loop: true,
-  spaceBetween: 50,
+  spaceBetween: 30,
 
   // If we need pagination
   pagination: {
