@@ -1,10 +1,13 @@
 const swiperDestination = new Swiper(".destination_swiper", {
   loop: true,
-  spaceBetween: 50,
+  spaceBetween: 30,
+  grabCursor: true,
 
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
+    dynamicBullets: true,
+    clickable: true,
   },
 
   // Navigation arrows
@@ -34,10 +37,13 @@ const swiperDestination = new Swiper(".destination_swiper", {
 const swiperTestimoni = new Swiper(".testimoni_swiper", {
   loop: true,
   spaceBetween: 30,
+  grabCursor: true,
 
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
+    dynamicBullets: true,
+    clickable: true,
   },
 
   // Navigation arrows
