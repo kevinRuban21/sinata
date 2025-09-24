@@ -187,6 +187,10 @@ footer {
     max-width: 1200px;
     margin: 0 70px 55px;
   }
+
+  .wisata .card {
+    max-width: 540px;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -226,37 +230,28 @@ footer {
     background-image: linear-gradient(to right, #07904c, #022a16);
   }
 
-  .wisata h5 {
-    font-size: 12px;
-  }
-
-  .wisata p {
-    font-size: 10px;
-  }
-
-  .wisata .tmbl {
-    margin-top: -30px !important;
-    gap: 10px;
+  .wisata img {
+    width: 100%;
   }
 
   .tmbl_paket,
   .tmbl_paket_outline {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 15px;
     text-decoration: none;
     border-radius: 5px;
     overflow: hidden;
   }
 
   .tmbl_paket {
-    padding: 5px 30px;
+    padding: 10px 35px;
     background-color: #07904c;
     color: #fff;
     transition: 0.2s ease-in;
   }
 
   .tmbl_paket_outline {
-    padding: 5px 15px;
+    padding: 10px 20px;
     border: 1px solid #07904c;
     color: #07904c;
     transition: 0.2s ease-in;
